@@ -1,0 +1,102 @@
+
+:root {
+    --admin1: #533425;
+    --admin2: #7f6457;
+    --admin3: #9c7870;
+    --admin4: #e5c4a0;
+    --admin5: rgb(255, 252, 252);
+    --bg: #ffffff;
+    --text: #222222;
+    --muted: #6b7280;
+    --accent: #005B41;
+    --container-max: 1100px;
+    --btn-radius: 6px;
+}
+
+html {
+    height: 100%;
+}
+
+.body1{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    background-color: var(--admin5);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global container for consistent page width */
+.container{
+    max-width: var(--container-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*---------------Home--------------------*/
+
+.stuff{
+    background-color: var(--admin2);
+}
+
+.stuff .description{
+    max-width: 500px;
+
+}
+.stuff .homefoto1{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.feature-image__img{
+    max-width: 80%;
+}
+
+/*---------------newPost--------------------*/
+
+.newPost .postContent .Content{
+    width: 80%;
+}
+/*---------------navbar--------------------*/
+
+.navbar{
+    background-color: var(--admin1);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #a38068; 
+}
+
+.navbar .navbar-nav .nav-item .nav-link:active,
+.navbar .navbar-nav .nav-item .nav-link:focus,
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: var(--admin3);
+}
+
+.navbar .logo1 {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.navbar .search{
+    color: var(--admin2);
+    border-left: 1px solid var(--admin3);
+}
+
+
+.navbar .navbar-toggler{
+    color: #4F4557;
+    font-size: 25px;
+    border-color: #37306B;
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none
+}

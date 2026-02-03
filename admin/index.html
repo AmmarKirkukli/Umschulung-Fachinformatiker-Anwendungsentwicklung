@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/css/all.min.css">
+    <link rel="stylesheet" href="./css/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <title>Admin Panel - Home</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .main-title {
+            color: white;
+        }
+        .description {
+            color: rgba(255,255,255,0.9);
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .feature-image__img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-user-shield"></i> Admin Panel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#students">Studenten</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#seminars">Seminare</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reports">Berichte</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="stuff pt-5">
+        <div class="container">
+            <header class="main-title text-center mt-3 mb-5">
+                <img class="mb-3 img-fluid" src="./img/Lehrer22.png" alt="Lehrerpanel" style="max-width: 300px;">
+                <h1 class="text-light">Willkommen in unserem Lehrerpanel</h1>
+                <p class="text-light text-uppercase">Hier können Sie alle Funktionen Ihres Lehrerpanels aufrufen</p>
+            </header>
+
+            <p class="description text-center mb-5 mx-auto text-light fs-5" style="max-width: 800px;">
+                Auf dieser Seite können Sie viele Dinge tun, darunter das Hinzufügen neuer Studenten, 
+                das Löschen und Bearbeiten von Studentendaten sowie das Hinzufügen, Bearbeiten und Löschen von Seminaren.
+            </p>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-8 mb-4">
+                    <figure class="feature-image text-center">
+                        <img class="feature-image__img img-fluid" src="./img/lehrer44.png" alt="Support-Team" style="max-width: 500px;">
+                    </figure>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <article class="feature-card text-center">
+                        <h2 class="feature-card__title mb-3">Probleme melden</h2>
+                        <p class="feature-card__text fs-6 mb-3">Hier können Sie Beschwerden einreichen, Probleme melden und Verbesserungsvorschläge für die Seite machen.</p>
+                        <p class="feature-card__text fs-6 mb-4">Sie können sich jederzeit an das technische Supportteam wenden.</p>
+                        <button class="btn btn-primary btn-lg rounded-pill" disabled>
+                            <i class="fas fa-flag"></i> Probleme melden
+                        </button>
+                        <p class="text-muted mt-2 small">Nur in der PHP-Version verfügbar</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Admin Functions -->
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Studenten Verwalten</h5>
+                            <p class="card-text">Hinzufügen, bearbeiten und löschen von Studenten</p>
+                            <button class="btn btn-outline-primary" disabled>Verwalten</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <i class="fas fa-chalkboard-teacher fa-3x text-success mb-3"></i>
+                            <h5 class="card-title">Seminare Verwalten</h5>
+                            <p class="card-text">Erstellen und verwalten Sie Seminare</p>
+                            <button class="btn btn-outline-success" disabled>Verwalten</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <i class="fas fa-clipboard-list fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Anmeldungen</h5>
+                            <p class="card-text">Überprüfen Sie Seminaranmeldungen</p>
+                            <button class="btn btn-outline-warning" disabled>Ansehen</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <i class="fas fa-chart-bar fa-3x text-danger mb-3"></i>
+                            <h5 class="card-title">Statistiken</h5>
+                            <p class="card-text">Sehen Sie sich Berichte und Statistiken an</p>
+                            <button class="btn btn-outline-danger" disabled>Berichte</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demo Notice -->
+            <div class="alert alert-warning mt-5 text-center">
+                <h5><i class="fas fa-exclamation-triangle"></i> Demo-Version</h5>
+                <p class="mb-0">Dies ist eine statische Demo-Seite für GitHub Pages. Alle Admin-Funktionen (Login, Datenbankzugriff, CRUD-Operationen) sind nur in der vollständigen PHP-Version mit XAMPP verfügbar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-4 pb-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2026 Admin Panel - Fachinformatiker Anwendungsentwicklung</p>
+            <a href="../index.html" class="btn btn-outline-light btn-sm">Zurück zur Startseite</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

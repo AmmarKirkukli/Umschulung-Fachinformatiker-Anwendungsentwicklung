@@ -18,7 +18,7 @@ $action = './include/login.inc.php';
                         <label for="password" class="form-label">Passwort</label>
                         <input id="password" name="password" type="password" class="form-control" placeholder="Passwort" required minlength="8">
                     </div>
-
+                    <P>Benutzername: ammartest , Passwort: 00123123</P>
                     <div class="d-flex gap-2">
                         <button type="submit" name="submit" class="btn btn-primary rounded-pill">Login</button>
                         <a class="btn btn-outline-secondary rounded-pill" href="index.php?action=register">Registrieren</a>
